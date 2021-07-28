@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/script.js"></script>
+    <title>Kalkulator przewalutowania</title>
+</head>
+
+<body class="boody">
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Podstawowy kalkulator walut</h1>
+        </header>
+        <main class="main">
+            <section class="section">
+                <form class="form js-form">
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Kalkulator walut</legend>
+                        <p class="form__adnotation">Pola oznaczone * są wymagane.</p>
+                        <p>
+                            <label>
+                                <span class="form__labelText">Kwota PLN*: </span>
+                                <input class="form__field js-amount" type="number" step="any" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <span class="form__labelText">Waluta posiadana*: </span>
+                                <select class="form__field js-currency" name="currency">
+                                    <option selected>Wybierz walutę</option>
+                                    <option value="CHF">Frank Szwajcarski - CHF</option>
+                                    <option value="USD">Dolar - USD</option>
+                                    <option value="EUR">Euro - EUR</option>
+                                    <option value="GBP">Funt Brytyjski - GBP</option>
+                                    <option value="RUB">Rubel Rosysjki - RUB</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <span class="form__labelText">Kurs: </span>
+                                <input class="form__field js-exchangeRate" type="number" value="" readonly>
+                            </label>
+                        </p>
+                    </fieldset>
+                    <div class="form__container">
+                        <button class="button">Przelicz</button>
+                    </div>
+                    <div class="form__container">
+                        <button class="button js-reset" type="reset">Wyczyść</button>
+                    </div>
+                    <div class="form__container">
+                        <p class="form__result">
+                            Przeliczona kwota: <span class="js-result">0</span>
+                        </p>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__paragraph">Coded by Patryk Krawczyk &copy; 2021</p>
+        </footer>
+    </div>
+</body>
+
+</html>
