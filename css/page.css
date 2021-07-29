@@ -1,7 +1,8 @@
-.boody {
+.body {
     background-image: url("img/currency-background.png");
     background-repeat: no-repeat;
 }
+
 .page {
     max-width: 1048px;
     padding: 8px;
