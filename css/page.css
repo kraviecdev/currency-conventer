@@ -1,5 +1,6 @@
 .boody {
-    background-color: aliceblue;
+    background-image: url("img/currency-background.png");
+    background-repeat: no-repeat;
 }
 .page {
     max-width: 1048px;
@@ -14,7 +15,7 @@
 
 .section {
     padding: 5px;
-    background-color: hsl(203, 92%, 90%);
+    background-color: hsla(203, 80%, 90%, 0.80);
     border-radius: 5px;
     margin: 20px auto;
 }
