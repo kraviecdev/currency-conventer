@@ -65,6 +65,10 @@
 .button:hover {
     border: 1px solid hsl(0, 0%, 50%);
 }
+.button:active {
+    border: 1px solid hsl(0, 0%, 0%);
+    background-color: hsl(203, 92%, 40%);
+}
 
 .form__container {
     text-align: center;
