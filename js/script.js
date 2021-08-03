@@ -31,7 +31,7 @@
         formElement.addEventListener("submit", (event) => {
             event.preventDefault();
 
-            let result = amountElement.value / rateElement.value;
+            const result = amountElement.value / rateElement.value;
 
             resultElement.innerText = `${result.toFixed(2)} ${currencySelectorElement.value}`;
         });
