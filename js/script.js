@@ -1,6 +1,7 @@
 {
     const rateElement = document.querySelector(".js-exchangeRate");
     const currencySelectorElement = document.querySelector(".js-currency");
+    const resultElement = document.querySelector(".js-result");
 
     currencyChange = () => {
         const rateEUR = 4.4278;
@@ -26,8 +27,7 @@
 
     init = () => {
         const formElement = document.querySelector(".js-form")
-        const amountElement = document.querySelector(".js-amount");
-        const resultElement = document.querySelector(".js-result");
+        const amountElement = document.querySelector(".js-amount");    
         formElement.addEventListener("submit", (event) => {
             event.preventDefault();
 
