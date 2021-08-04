@@ -4,6 +4,7 @@
     const resultElement = document.querySelector(".js-result");
 
     currencyChange = () => {
+        const rateZero = 0;
         const rateEUR = 4.4278;
         const rateCHF = 4.2525;
         const rateUSD = 3.9012;
@@ -11,6 +12,8 @@
         const rateRUB = 0.0523;
         currencySelectorElement.addEventListener("input", () => {
             switch (currencySelectorElement.value) {
+                case "Zero":
+                    return rateElement.value = rateZero;
                 case "EUR":
                     return rateElement.value = rateEUR;
                 case "CHF":
