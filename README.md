@@ -1,4 +1,4 @@
-# Personal Homepage
+# Currency Calculator
 
 - Author: Patryk Krawczyk
 - Created: 28-07-2021
