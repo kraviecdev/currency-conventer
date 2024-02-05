@@ -6,7 +6,7 @@
 ![Screen](css/img/currency-readme-screen.png)
 
 # Demo
-[Here you find demo](https://patrick36212.github.io/currency-conventer/)
+[Here you find demo](https://kraviecdev.github.io/currency-conventer/)
 # Description
 First time used `<form>` markup and submit button.
 In this project i tried to write as simple *JavaScript* code as it possible. 
